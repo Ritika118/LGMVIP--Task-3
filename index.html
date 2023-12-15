@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="header">
+            <h2>STUDENT ENROLLMENT FORM</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="form">
+            <form autocomplete="off">
+            <div class="name">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter Your Name" required>
+            </div>  
+            <div class="email">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter Your Email" required>
+            </div>  
+            <div class="website">
+                <label for="Website">Website:</label>
+                <input type="url" id="website" placeholder="https://www.xyz.com" required>
+            </div>  
+            <div class="image">
+                <label for="url">Image:</label>
+                <input type="url" id="url" placeholder="Enter Your Image" required>
+            </div>
+            <div class="gender">
+                <span class="text">
+                    <label for="gender">Gender:</label>
+                    <label><input type="radio" name="male-female" id="male" value="Male">Male</label>
+                    <label><input type="radio" name="male-female" id="female" value="Female">Female</label>
+                </span>
+            </div>
+            <div class="skills">
+                <label for="skills">Skills:</label>
+                <span class="text">
+                    <label><input type="checkbox" value="HTML" id="html" class="checkbox">HTML</label>
+                    <label><input type="checkbox" value="CSS" id="css" class="checkbox">CSS</label>
+                    <label><input type="checkbox" value="JavaScript" id="javascript" class="checkbox">JavaScript</label>
+                </span>
+            </div>
+            <div class="but">
+                <button type="submit" id="submit">Submit</button>
+                <button type="reset" id="reset">Cancel</button>
+            </div>
+            </form>
+        </div>
+            <div class="line"></div>
+            <div class="op-box">
+                <div class="output">
+                    <h2>Students Detail</h2>
+                    <div class="cardContainer" id="cardContainer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
